@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Student Marks Predictor</title>
+</head>
+
+<body>
+
+<h1>Marks Prediction</h1>
+
+<form action="/predict" method="post">
+
+    <input
+      type="number"
+      name="age"
+      placeholder="Age">
+
+    <br><br>
+
+    <input
+      type="number"
+      name="gender"
+      placeholder="Gender
+      (Male=1 Female=0)">
+
+    <br><br>
+
+    <input
+      type="number"
+      name="hours"
+      placeholder="Study Hours">
+
+    <br><br>
+
+    <input
+      type="number"
+      name="attendance"
+      placeholder="Attendance">
+
+    <br><br>
+
+    <button type="submit">
+        Predict
+    </button>
+
+</form>
+
+<h2>
+    Predicted Marks:
+    {{ result }}
+</h2>
+
+</body>
+</html>
